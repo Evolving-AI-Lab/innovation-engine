@@ -17,12 +17,20 @@ For more information regarding the paper, please visit www.evolvingai.org/Innova
 
 ## Notes
 
-This code base is a fork from the initial project here: https://github.com/Evolving-AI-Lab/fooling
-It has support for the latest Caffe and new experiments as specified in the GECCO paper.
+This code base is a fork from the [initial project] (https://github.com/Evolving-AI-Lab/fooling).
+
+* It has support for the latest Caffe.
+* Experiments are in [here](https://github.com/Evolving-AI-Lab/innovation-engine/tree/master/sferes/exp/images/x)
+  * [Novelty Search](https://github.com/Evolving-AI-Lab/innovation-engine/blob/master/sferes/exp/images/x/gecco15/dl_novelty_images_imagenet.cpp)
+  * [MAP-Elites](https://github.com/Evolving-AI-Lab/innovation-engine/blob/master/sferes/exp/images/x/gecco15/dl_map_elites_images.cpp)
+  * [Single-class EA](https://github.com/Evolving-AI-Lab/innovation-engine/blob/master/sferes/exp/images/x/gecco15/dl_rank_simple_images.cpp)
+
 
 ## Requirements and Installation
 
-Please refer to the documentation of this project: https://github.com/Evolving-AI-Lab/fooling
+To start off, please refer to the documentation in the initial [project] (https://github.com/Evolving-AI-Lab/fooling)
+
+Feel free to create github issues. We will help you as we can.
 
 ## License
 
