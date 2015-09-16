@@ -13,7 +13,7 @@ layers {
 
   transform_param {
     crop_size: 227
-    mean_file: "/project/EvolvingAI/anguyen8/model/imagenet_mean.binaryproto"
+    mean_file: "imagenet_mean.binaryproto"
     mirror: false
   }
 }
