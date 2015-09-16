@@ -1,4 +1,4 @@
-# InnovationEngine code
+# Innovation Engine
 
 This is the code base used to reproduce the experiments in the paper:
 
