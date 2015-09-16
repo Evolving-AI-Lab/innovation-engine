@@ -1,0 +1,13 @@
+
+#! /usr/bin/env python
+def build(bld):			
+    obj = bld.new_task_gen('cxx', 'program')
+    obj.source = 'dl_map_elites_images_mnist_dbn.cpp'
+    obj.includes = '. ../../ /apps/CUDA/cuda-5.5/include /home/anguyen8/local/include /project/RIISVis/anguyen8/anaconda/py26/include/python2.6'
+    obj.uselib_local = 'sferes2'
+    obj.cxxflags = ['-std=c++11']
+    obj.uselib = ''
+    obj.target = 'images'
+    obj.uselib_local = 'sferes2'
+    obj.lib=['png', 'cuda', 'caffe', 'opencv_core', 'opencv_highgui', 'opencv_imgproc', 'lmdb', 'glog', 'python2.6', 'boost_python']
+    #obj.lib=['png', 'opencv_core', 'opencv_highgui', 'opencv_imgproc', 'lmdb', 'glog', 'python2.6', 'boost_python']

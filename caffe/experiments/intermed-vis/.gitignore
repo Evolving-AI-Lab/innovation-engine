@@ -1,0 +1,6 @@
+*.pkl
+*.txt
+*.jpg
+.tmp*
+*.gz
+work

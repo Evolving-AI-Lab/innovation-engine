@@ -1,0 +1,12 @@
+
+#! /usr/bin/env python
+def build(bld):			
+    obj = bld.new_task_gen('cxx', 'program')
+    obj.source = 'dl_rank_simple_images.cpp'
+    obj.includes = '. ../../ /usr/local/cuda-6.0/include /usr/include/python2.7'
+    obj.uselib_local = 'sferes2'
+    obj.uselib = ''
+    obj.target = 'images'
+    obj.uselib_local = 'sferes2'
+    obj.cxxflags = ['-std=c++11']
+    obj.lib=['png', 'cuda', 'caffe', 'opencv_core', 'opencv_highgui', 'opencv_imgproc', 'lmdb', 'glog', 'python2.7', 'boost_python']

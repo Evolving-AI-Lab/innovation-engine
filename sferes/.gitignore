@@ -1,0 +1,10 @@
+*.pyc
+*.png
+*.jpg
+build/
+.waf-1.5.14*/
+.Totti-*/
+Totti-*/
+.lock-wscript
+mmm/
+.DS_Store

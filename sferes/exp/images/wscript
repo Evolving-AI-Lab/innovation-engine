@@ -1,0 +1,14 @@
+
+#! /usr/bin/env python
+def build(bld):			
+    obj = bld.new_task_gen('cxx', 'program')
+    obj.source = 'x/gecco15/dl_map_elites_images.cpp'
+    #obj.source = 'x/gecco15/dl_map_elites_images_no_sine.cpp'
+    obj.includes = '. ../../ /apps/CUDA/cuda-6.5/include /home/anguyen8/local/include /project/EvolvingAI/anguyen8/local/include /project/EvolvingAI/anguyen8/local/cuda-6.5/include'
+    obj.uselib_local = 'sferes2'
+    obj.uselib = ''
+    #obj.libs = ['cudart']
+    obj.target = 'images'
+    obj.cxxflags = ['-std=c++11']
+    obj.uselib_local = 'sferes2'
+    obj.lib=['png', 'caffe', 'opencv_core', 'opencv_highgui', 'opencv_imgproc', 'lmdb', 'glog']

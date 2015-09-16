@@ -1,0 +1,10 @@
+
+#! /usr/bin/env python
+def build(bld):
+    obj = bld.new_task_gen('cxx', 'program')
+    obj.source = 'example.cpp'
+    obj.includes = '. ../../ /usr/local/cuda/include'
+    obj.uselib_local = 'sferes2'
+    obj.uselib = ''
+    obj.target = 'example'
+    obj.lib = ['cudart', 'boost_mpi-mt', 'mpi_cxx', 'mpi', 'boost_program_options-mt', 'boost_serialization-mt', 'boost_system-mt', 'boost_filesystem-mt']
